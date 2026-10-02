@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NARESH.EXE — Software &amp; AI Developer</title>
+<meta name="description" content="Naresh C. — CSE (AI) undergrad building AI systems, web games and full-stack apps. Open to internships.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050505'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='36' font-weight='bold' fill='%23e6ff00' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BOOT SEQUENCE -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-box">
+    <p class="boot-line">&gt; initializing naresh.exe<span class="cursor">▊</span></p>
+    <p class="boot-line">> loading modules [██████████] 100%</p>
+    <p class="boot-line">> status: <span class="y">OPEN_TO_WORK</span></p>
+    <p class="boot-line">> rendering portfolio_</p>
+  </div>
+</div>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- HUD NAV -->
+<header class="hud-nav" id="hudNav">
+  <a class="brand" href="#top"><span class="brand-mark">N</span>NARESH<span class="y">.EXE</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#status" data-sec="status"><span class="nav-idx">01</span>STATUS</a>
+    <a href="#arsenal" data-sec="arsenal"><span class="nav-idx">02</span>ARSENAL</a>
+    <a href="#quests" data-sec="quests"><span class="nav-idx">03</span>QUESTS</a>
+    <a href="#experience" data-sec="experience"><span class="nav-idx">04</span>CAREER</a>
+    <a href="#contact" data-sec="contact"><span class="nav-idx">05</span>CONTACT</a>
+  </nav>
+  <div class="nav-right">
+    <span class="work-pill"><span class="pulse"></span>OPEN TO WORK</span>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <canvas id="grid-bg" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="eyebrow reveal">// PORTFOLIO v2.0 — BUILD 2026.10</p>
+        <h1 class="glitch reveal" data-text="NARESH C.">NARESH C.</h1>
+        <p class="typed-line reveal">&gt; <span id="typed"></span><span class="cursor">▊</span></p>
+        <p class="hero-blurb reveal">
+          CSE (AI) undergrad who ships. I build AI systems, browser games and full-stack
+          web apps — from zero-shot anomaly detection to a live arcade with real players.
+          Currently hunting <span class="y">internships</span>.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#quests" class="btn btn-solid">VIEW QUESTS</a>
+          <a href="resume.pdf" class="btn btn-ghost" download>DOWNLOAD RESUME</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="hstat"><span class="hstat-num" data-count="6">0</span><span class="hstat-label">SHIPPED PROJECTS</span></div>
+          <div class="hstat"><span class="hstat-num" data-count="4">0</span><span class="hstat-label">GAMES LIVE</span></div>
+          <div class="hstat"><span class="hstat-num" data-count="0.846" data-dec="3">0</span><span class="hstat-label">BEST PIXEL AUROC</span></div>
+          <div class="hstat"><span class="hstat-num" data-count="43">0</span><span class="hstat-label">DSA LESSONS</span></div>
+        </div>
+      </div>
+
+      <aside class="profile-card reveal">
+        <div class="pc-head">
+          <span class="pc-title">PLAYER CARD</span>
+          <span class="pc-id">#URK24CS5061</span>
+        </div>
+        <div class="pc-photo-wrap">
+          <img src="images/profile.jpg" alt="Naresh C." class="pc-photo">
+          <span class="pc-level">LVL 20</span>
+        </div>
+        <div class="pc-name">NARESH C.<span class="pc-status">● ONLINE</span></div>
+        <p class="pc-role">Software &amp; AI Developer</p>
+        <div class="pc-bars">
+          <div class="pc-bar"><div class="pc-bar-top"><span>PYTHON</span><span>92</span></div><div class="bar"><i style="--w:92%"></i></div></div>
+          <div class="pc-bar"><div class="pc-bar-top"><span>JAVASCRIPT</span><span>88</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+          <div class="pc-bar"><div class="pc-bar-top"><span>AI / ML</span><span>84</span></div><div class="bar"><i style="--w:84%"></i></div></div>
+          <div class="pc-bar"><div class="pc-bar-top"><span>PROBLEM SOLVING</span><span>90</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+        </div>
+        <div class="pc-foot">
+          <span>COIMBATORE, IN</span><span class="y">▸ B.TECH CSE (AI) '28</span>
+        </div>
+      </aside>
+    </div>
+    <a class="scroll-hint" href="#status">SCROLL <span>▼</span></a>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack">
+      <span>OPEN TO INTERNSHIPS</span><i>◆</i><span>AI / ML</span><i>◆</i><span>FULL-STACK WEB</span><i>◆</i><span>COMPUTER VISION</span><i>◆</i><span>GAME DEV</span><i>◆</i><span>SHIPPED &amp; LIVE</span><i>◆</i>
+    </div>
+  </div>
+
+  <!-- ============ STATUS ============ -->
+  <section class="section" id="status">
+    <div class="sec-head reveal">
+      <span class="sec-idx">01</span>
+      <h2>STATUS <span class="y">REPORT</span></h2>
+      <p class="sec-sub">// who is this player</p>
+    </div>
+    <div class="status-grid">
+      <div class="panel reveal">
+        <div class="panel-tag">BIO</div>
+        <p class="bio-text">
+          Third-year B.Tech Computer Science (AI) student at Karunya Institute of Technology
+          and Sciences, Coimbatore. I don't do tutorial projects — everything here is
+          <span class="y">built from scratch and deployed</span>: a multi-game arcade with a
+          global leaderboard, a zero-shot vision pipeline validated on real industrial data,
+          an AI interview platform, and a client-side PDF toolkit people actually use.
+        </p>
+        <p class="bio-text">
+          When I'm not shipping, I'm grinding DSA in C++ or running operations at my
+          family's retail business.
+        </p>
+        <div class="lang-row">
+          <span class="chip">HINDI · NATIVE</span>
+          <span class="chip">ENGLISH · PROFESSIONAL</span>
+          <span class="chip">TAMIL · PROFESSIONAL</span>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <div class="panel-tag">EDUCATION</div>
+        <div class="edu">
+          <p class="edu-degree">B.Tech — Computer Science &amp; Engineering (AI)</p>
+          <p class="edu-school">Karunya Institute of Technology and Sciences, Coimbatore</p>
+          <div class="edu-meta"><span>2024 — 2028</span><span class="y">3RD YEAR / 5TH SEM</span></div>
+        </div>
+        <div class="edu">
+          <p class="edu-degree">Coursework</p>
+          <p class="edu-school">Data Structures &amp; Algorithms · Theory of Computation · Computer Networks · Cybersecurity · DBMS · Computer Vision</p>
+        </div>
+        <div class="panel-tag" style="margin-top:1.4rem">CURRENTLY</div>
+        <ul class="now-list">
+          <li><span class="y">▸</span> Seeking 2-month remote internships</li>
+          <li><span class="y">▸</span> Measuring PixelArena analytics for the next game</li>
+          <li><span class="y">▸</span> Building CLIP-StreamAD with my project team</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARSENAL ============ -->
+  <section class="section" id="arsenal">
+    <div class="sec-head reveal">
+      <span class="sec-idx">02</span>
+      <h2>THE <span class="y">ARSENAL</span></h2>
+      <p class="sec-sub">// weapons of choice</p>
+    </div>
+    <div class="arsenal-grid">
+      <div class="panel reveal">
+        <div class="panel-tag">LANGUAGES</div>
+        <div class="skill"><div class="skill-top"><span>Python</span><span>92%</span></div><div class="bar"><i style="--w:92%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>JavaScript</span><span>88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>C++</span><span>82%</span></div><div class="bar"><i style="--w:82%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>Java</span><span>75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>SQL · HTML · CSS</span><span>80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+      </div>
+      <div class="panel reveal">
+        <div class="panel-tag">AI / ML</div>
+        <div class="tag-cloud">
+          <span>PyTorch</span><span>OpenCV</span><span>CLIP</span><span>Hugging Face</span><span>Gemini API</span><span>Zero-Shot Learning</span><span>BM25 / BM25+</span><span>Computer Vision</span>
+        </div>
+        <div class="panel-tag" style="margin-top:1.4rem">FRAMEWORKS</div>
+        <div class="tag-cloud">
+          <span>React</span><span>FastAPI</span><span>Gradio</span><span>Canvas 2D</span><span>REST APIs</span>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <div class="panel-tag">PLATFORMS &amp; TOOLS</div>
+        <div class="tag-cloud">
+          <span>Git &amp; GitHub</span><span>Firebase / Firestore</span><span>GitHub Pages</span><span>SQLite</span><span>PWA</span><span>Google Analytics</span><span>Linux</span>
+        </div>
+        <div class="panel-tag" style="margin-top:1.4rem">PROBLEM SOLVING</div>
+        <p class="bio-text" style="margin:0">43 structured DSA lessons completed across BytsOne coursework — C++ solutions on LeetCode. Built for timed, competitive coding.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUESTS ============ -->
+  <section class="section" id="quests">
+    <div class="sec-head reveal">
+      <span class="sec-idx">03</span>
+      <h2>COMPLETED <span class="y">QUESTS</span></h2>
+      <p class="sec-sub">// shipped, live, verifiable</p>
+    </div>
+    <div class="quests-grid">
+
+      <article class="quest reveal">
+        <div class="quest-img"><img src="images/quest-pixelarena.jpg" alt="PixelArena" loading="lazy"><span class="quest-flag">FLAGSHIP</span></div>
+        <div class="quest-body">
+          <h3>PIXELARENA</h3>
+          <p class="quest-sub">Multi-game arcade portal · JS + Canvas 2D + Firebase</p>
+          <p>Four original browser games with a real-time global leaderboard, name-entry records and analytics. 16 active users and 17 game starts in the first launch push.</p>
+          <div class="quest-tags"><span>JavaScript</span><span>Firestore</span><span>PWA</span><span>GA4</span></div>
+          <div class="quest-links">
+            <a href="https://naresh-tech6380.github.io/pixelarena/" target="_blank" rel="noopener">▶ PLAY LIVE</a>
+            <a href="https://github.com/naresh-tech6380/pixelarena" target="_blank" rel="noopener">CODE ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="quest reveal">
+        <div class="quest-img"><img src="images/quest-clipstreamad.jpg" alt="CLIP-StreamAD" loading="lazy"><span class="quest-flag">AI RESEARCH</span></div>
+        <div class="quest-body">
+          <h3>CLIP-STREAMAD</h3>
+          <p class="quest-sub">Zero-shot industrial anomaly detection · Python + PyTorch</p>
+          <p>Training-free CLIP pipeline for real-time visual inspection. Validated on MVTec AD: <span class="y">0.981 image score, 0.846 pixel AUROC</span> across 169 patches in 44s on CPU.</p>
+          <div class="quest-tags"><span>PyTorch</span><span>OpenCV</span><span>CLIP</span><span>MVTec AD</span></div>
+          <div class="quest-links">
+            <a href="https://github.com/naresh-tech6380/real-time-zero-short-visual-anomaly-detection-for-industrial-inspection" target="_blank" rel="noopener">CODE ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="quest reveal">
+        <div class="quest-img"><img src="images/quest-interviewbot.jpg" alt="AI Interview Bot" loading="lazy"><span class="quest-flag">AI APP</span></div>
+        <div class="quest-body">
+          <h3>AI INTERVIEW BOT</h3>
+          <p class="quest-sub">Candidate screening platform · Gradio + Hugging Face</p>
+          <p>Extracts resumes, runs multi-turn interviews with a local Hugging Face model, scores responses, stores results in SQLite and generates PDF reports.</p>
+          <div class="quest-tags"><span>Python</span><span>Gradio</span><span>SQLite</span><span>LLM</span></div>
+          <div class="quest-links">
+            <a href="https://github.com/naresh-tech6380" target="_blank" rel="noopener">CODE ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="quest reveal">
+        <div class="quest-img"><img src="images/quest-pdftoolkit.jpg" alt="Free PDF Toolkit" loading="lazy"><span class="quest-flag">LIVE TOOL</span></div>
+        <div class="quest-body">
+          <h3>FREE PDF TOOLKIT</h3>
+          <p class="quest-sub">6 client-side PDF tools · Vanilla JS</p>
+          <p>Merge, split, compress, rotate, images-to-PDF and PDF-to-images — 100% in-browser, no uploads, no sign-up. Built to earn via traffic.</p>
+          <div class="quest-tags"><span>JavaScript</span><span>pdf-lib</span><span>PDF.js</span></div>
+          <div class="quest-links">
+            <a href="https://naresh-tech6380.github.io/free-pdf-toolkit/" target="_blank" rel="noopener">▶ USE LIVE</a>
+            <a href="https://github.com/naresh-tech6380" target="_blank" rel="noopener">CODE ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="sec-head reveal">
+      <span class="sec-idx">04</span>
+      <h2>CAREER <span class="y">LOG</span></h2>
+      <p class="sec-sub">// experience entries</p>
+    </div>
+    <div class="timeline">
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="panel t-card">
+          <div class="t-when">ONGOING</div>
+          <h3>BUSINESS OPERATIONS LEAD</h3>
+          <p class="quest-sub">Amar Electrical &amp; Hardwares · Partnership-Owned Retail Business</p>
+          <p>Run day-to-day operations of a family electrical &amp; hardware retail business alongside full-time engineering studies — inventory, vendors, billing and customer-facing sales.</p>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="panel t-card">
+          <div class="t-when">2024 — PRESENT</div>
+          <h3>INDEPENDENT DEVELOPER</h3>
+          <p class="quest-sub">Self-directed · Shipped products</p>
+          <p>Designed, built and deployed 6+ public projects end-to-end: web games, AI/ML pipelines, developer tools and automation — owning everything from architecture to analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="sec-head reveal">
+      <span class="sec-idx">05</span>
+      <h2>OPEN <span class="y">CHANNEL</span></h2>
+      <p class="sec-sub">// let's build something</p>
+    </div>
+    <div class="contact-grid">
+      <div class="panel reveal contact-main">
+        <p class="contact-big">Have an <span class="y">internship</span>, a project, or a wild idea?</p>
+        <p class="bio-text">My inbox is the fastest way to reach me. I reply quick and I ship quicker.</p>
+        <div class="hero-cta">
+          <a href="mailto:nareshc@karunya.edu.in" class="btn btn-solid">nareshc@karunya.edu.in</a>
+          <a href="resume.pdf" class="btn btn-ghost" download>DOWNLOAD RESUME</a>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <div class="panel-tag">DIRECT LINES</div>
+        <ul class="contact-list">
+          <li><span class="y">▸</span><a href="tel:+916380116798">+91 63801 16798</a></li>
+          <li><span class="y">▸</span><a href="https://github.com/naresh-tech6380" target="_blank" rel="noopener">github.com/naresh-tech6380</a></li>
+          <li><span class="y">▸</span><a href="https://www.linkedin.com/in/naresh-c-269133350/" target="_blank" rel="noopener">linkedin.com/in/naresh-c-269133350</a></li>
+          <li><span class="y">▸</span><span>Coimbatore, Tamil Nadu, IN</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><span class="y">NARESH.EXE</span> © 2026 — designed &amp; built from scratch. No templates were harmed.</p>
+  <a href="#top" class="to-top">BACK TO TOP ↑</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
